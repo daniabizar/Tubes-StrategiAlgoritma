@@ -1,0 +1,63 @@
+    <!DOCTYPE html>
+    <html>
+        <head>
+            <title>T-Food
+            </title>
+            <link rel="stylesheet" type="text/css" href="style.css">
+            <script src="script.js" defer></script>
+        </head>
+        <body>
+            <h1 class="judul-website">REKOMENDASI MAKANAN SEKITAR TELKOM UNIVERSITY</h1>
+        <div class="container">
+            <div class="border-hasil">
+                <h2 class="text-hasil">HASIL <br> REKOMENDASI</h2>
+                <div id="recommendation"></div>
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+                <script src="script.js"></script>
+            </div>
+            <div class = "border-kanan">
+                        <h2 class="text-mencari">MENCARI TEMPAT MAKAN</h2>
+                        <hr class="garis-mencari">
+                        <form id="user-pref-form">
+                                <label for="price_limit" style="color:white; font-weight:lighter; font-size:90%;">LIMIT HARGA</label><br>
+                                <input type="number" id="price_limit" name="price_limit" min="0" class="input-limit"><br><br>
+                                <label for="rating_minimum" style="color:white;">RATING</label><br>
+                                <input type="number" id="rating_minimum" name="rating_minimum" min="0" max="5" step="0.1" class="input-rating-atas"><br><br>
+                                <div class="tombol-submit"><input type="submit" value="SUBMIT" class="button-submit"></div>
+                        </form>
+                        <h2 class="text-tambahkan"">TAMBAHKAN WARUNG FAVORIT </h2>
+                        <hr class="garis-tambahkan">            
+                        <form id="add-restaurant-form">
+                            <label for="name" style="color:white;">NAMA</label><br>
+                            <input type="text" id="name" name="name" class="input-nama"><br><br>
+                            <label for="rating" style="color:white;">RATING</label><br>
+                            <input type="number" id="rating" name="rating" min="0" max="5" step="0.1" class="input-rating-bawah"><br><br>
+                            <label for="price" style="color:white;">HARGA</label><br>
+                            <input type="number" id="price" name="price" min="0" class="input-harga"><br><br>
+                            <div class="tombol-add"><input type="submit" value="ADD" class="button-add"></div>
+                        </form>     
+            </div>
+        </div>
+        <div class="page-2">
+            <img src="asset\logo-black-Tfood-removebg-preview.png">
+            <div class="border-time">
+                <h2 class="page-2-time">
+                    HASIL WAKTU
+                    <br>
+                </h2>
+                <p id="recommendationTime"></p>
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+                <script src="script-2.js" defer></script>
+            </div>
+            <div class="border-showAll">
+                <h2 class="page-2-data">
+                    DATA SELURUH WARUNG
+                    <br>
+                </h2>
+                <p class="text-list" id="restaurantList"></p>
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+                <script src="script.js" defer></script>
+            </div>
+        </div>
+        </body>
+    </html>
